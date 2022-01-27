@@ -1,0 +1,410 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/*Home Page*/
+.homeDiv {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 16em;
+  background-size: cover;
+  padding-bottom: 20em;
+}
+.homeDiv h1 {
+  font-size: 5em;
+}
+.homeDiv h4 {
+  font-size: 2em;
+}
+.homeDiv .button {
+  margin: 0;
+  padding: 0;
+  margin-top: .5em;
+  width: 8em;
+  height: 3em;
+  font-size: 3em;
+  border-radius: 20px;
+}
+
+/*Login Options Page*/
+.loginOptions {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-size: cover;
+  padding-bottom: 20em;
+}
+.loginOptions h4 {
+  font-size: 3em;
+  padding-top: 3em;
+}
+.options .button {
+  margin: 1em;
+  margin-top: 3em;
+  padding: 0;
+  width:10em;
+  height: 3em;
+  font-size: 3em;
+  border-radius: 10px;
+}
+body {
+  background-image: url('../images/background.jpeg');
+}
+
+/* login */
+.login-signup {
+  color: white;
+}
+.ui.form .field>label { 
+  color: white
+}
+.menu {
+  height: 75px;
+}
+.item {
+  margin: auto;
+  width: 100px
+}
+.item a {
+  margin: auto;
+}
+
+/*Resume*/
+.resumePage .h3{
+  color: white;
+  font-size: 3em;
+}
+.resumePage{
+  margin: 3%;
+}
+.resume{
+  margin: 3%;
+}
+@font-face {
+  font-family: roboto-heading;
+  src: url(./Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto-subheading;
+  src: url(./Fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(./Fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(./Fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: roboto-italic;
+  src: url(./Fonts/Roboto/Roboto-LightItalic.ttf);
+}
+@font-face {
+  font-family: opensans-regular;
+  src: url(./Fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+.resume h1, .resume h2 {
+  font-family: roboto-heading;
+  padding: 0;
+  margin: 0;
+  margin-top: 3%;
+  border-bottom: 3px solid black;
+  width: 35px;
+  padding-bottom: 1%;
+  font-size: 1.25em;
+}
+.resume header h2 {
+  font-family: roboto-subheading;
+  font-size: 1.25em;
+}
+.resume h3 {
+  font-family: roboto-bold;
+  font-size: 1em;
+}
+.skill {
+  font-family: roboto-regular;
+  font-size: 1em;
+}
+.resume p {
+  font-family: opensans-regular;
+  font-size: 1em;
+}
+.resume h4 {
+  font-family: roboto-italic;
+  font-size: 1em;
+}
+.resume body {
+  height: 1300px;
+  background-color: #C3C3C3;
+}
+body .back {
+  background-color: #19171A;
+  height: 1000px;
+  width: 2300px;
+  transform: rotate(-50deg);
+  position: absolute;
+  right: 0;
+  bottom: 125px;
+  z-index: -100;
+}
+.resume .container {
+  width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #E8E8EB;
+  overflow: hidden;
+  padding: 50px;
+  height: 1300px;
+  box-shadow: -20px 9px 35px 19px rgba(0, 0, 0, 0.51);
+  border-radius: 5px;
+}
+.page, .social .items, .edu, .exp {
+  display: flex;
+}
+.resume header {
+  border-bottom: 1px solid #19171A;
+}
+.resume header h1 {
+  border: none;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+.resume header h2 {
+  width: 100%;
+  border: none;
+}
+.left {
+  border-right: 1px solid #19171A;
+  padding-right: 3%;
+}
+.right {
+  padding-left: 3%;
+}
+.right .profile, .right .social, .right .education, .right .experience {
+  border-bottom: 1px solid #19171A;
+}
+.page {
+  margin-top: 2%;
+}
+.page .left .contact h2, .page .right .profile h2 {
+  margin-top: 0;
+}
+.social .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 7.5%;
+}
+.social .item i {
+  margin-right: 7.5%;
+}
+.edu {
+  display: flex;
+  justify-content: space-between;
+}
+.edu .info {
+  width: 70%;
+}
+.exp {
+  display: flex;
+  justify-content: space-between;
+}
+.exp .info {
+  width: 70%;
+}
+.black {
+  background-color: black;
+  height: 400px;
+  transform: rotate(50deg);
+  position: relative;
+  bottom: 1500px;
+  left: 385px;
+  z-index: 2;
+}
+.profile p {
+  width: 75%;
+}
+.progress {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 15px;
+  border: 1px solid #19171A;
+}
+.progress .p {
+  background-color: #19171A;
+  height: 15px;
+}
+.progress .h {
+  width: 80%;
+}
+.progress .c {
+  width: 70%;
+}
+.progress .s {
+  width: 60%;
+}
+.progress .j {
+  width: 20%;
+}
+
+/*Profile*/
+.profile {
+  margin: 3%;
+}
+.profile .body{
+  display: flex;
+  margin: 3%;
+}
+.profile h3 {
+  font-size: 3em;
+  color: white;
+}
+.profile .body p{
+  color: white;
+  font-size: 1.5em;
+  margin: 2em;
+}
+.profile img {
+  width: 20%;
+}
+/*Project Links*/
+.projectLinks{
+  color: white;
+  margin: 3%
+}
+.projectLinks h3{
+  font-size: 3em;
+}
+.projectLinks .body{
+  margin: 3%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.projectLinks img {
+  width: 15em;
+  border-radius: 40px;
+}
+.projectLinks h4{
+  font-size: 2em;
+}
+.projectLinks .anchors a{
+  display: block;
+  font-size: 1.25rem;
+  margin: 2%;
+}
+
+/*Account*/
+.account {
+  color: white;
+  margin: 3%
+}
+.account h3 {
+  font-size: 3em;
+}
+.account .body {
+  font-size: 2em;
+  line-height: 2em;
+  margin: 3%;
+}
+
+/*Contact*/
+.contactme {
+  color: white;
+  margin: 3%
+}
+.contactme h3 {
+  font-size: 3em;
+}
+.contactme .body {
+  margin: 3%;
+  font-size: 1.5em;
+}
+
+/* Admin Feedback */
+.feedback{
+  color: white;
+  margin: 3%
+}
+.feedback h3{
+  font-size: 3em;
+}
+.feedback h4{
+  font-size: 3em;
+}
+.feedback p {
+  font-size: 2em;
+  margin: 0;
+}
+.feedback h6{
+  font-size: 1em;
+}
+.feedback .user-time {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback div h6 {
+  margin-right: 2%;
+}
+
+/*Not Found*/
+.notFound h3{
+  color: white;
+  font-size: 4em;
+  margin: auto;
+}
+
+/*Login Welcome*/
+.welcome {
+  color: white;
+  margin: 3%;
+}
