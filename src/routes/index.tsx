@@ -108,21 +108,19 @@ export function MainRoutes() {
   return (
     <div>
       {loggedIn ? <ProtectedMenu /> : <PublicMenu />}
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound404 />} />
         <Route path="/login" element={<LoginView />} />
         <Route path='/sign-up' element={<SignUpView />} />
-        <Route path='/login-success' element={<SuccessfulLogin />} />
         <Route path='/get-started' element={<GetStarted />} />
+        <Route path='/login-success' element={<ProtectedView><SuccessfulLogin /></ProtectedView>} />
         <Route path='/resume' element={<ProtectedView><Resume /></ProtectedView>} />
         <Route path='/profile' element={<ProtectedView><Profile /></ProtectedView>} />
         <Route path='/contact-me' element={<ProtectedView><ContactMe /></ProtectedView>} />
         <Route path='/project-links' element={<ProtectedView><ProjectLinks /></ProtectedView>} />
         <Route path='/account' element={<ProtectedView><Account /></ProtectedView>} />
         <Route path='/feedback' element={<ProtectedView><FeedbackView /></ProtectedView>} />
-        <Route path='/test' element={<DisplayFeedback />} />
       </Routes>
     </div>
   );
